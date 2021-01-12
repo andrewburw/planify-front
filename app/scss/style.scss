@@ -8,7 +8,7 @@
   top: 32px;
   right: 0px;
   z-index: 10;
-
+  transition: background .5s;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -32,8 +32,11 @@
     transform: translateY(4px);
   }
 }
-
+.header{
+  background-color: transparent;
+}
 .menu {
+  
   &__list-item {
     display: inline-block;
     color: white;
@@ -89,5 +92,112 @@
     padding-top: 50px;
   }
 }
+
+
+/* SECOND SECTION  */
+
+
+
+.second {
+  background-color: #ECECEC;
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+    border-top: 12px solid black;
+    padding: 36px 20px 54px;
+    max-width: 333px;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+  &__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  &__card-title {
+    @extend %rb-bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 19px;
+  }
+  &__card-text {
+    @extend %rb-regular;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 19px;
+  }
+  &__card-href {
+
+     padding-top: 36px;
+  }
+  &__crd-href {
+
+    color: $global-red;
+  }
+  &__crd-href:hover {
+
+  text-decoration: underline;
+  }
+}
+/* THIRD SECTION */
+.third{
+  &__info-card{
+     display: flex;
+     justify-content: space-between;
+     padding-top: 70px;
+    
+  }
+  &__info-text{
+    max-width: 457px;
+    padding-top: 20px;  
+    padding-left: 30px;
+    vertical-align: middle;
+   
+  }
+  &__info-text2{
+    max-width: 457px;
+    padding-top: 50px;  
+   
+    vertical-align: middle;
+   
+  }
+  &__info-text-title{
+    @extend %rb-bold;
+    color: $global-red;
+    font-size: 18px;
+    line-height: 21px;
+
+  }
+  &__info-text-text {
+    @extend %rb-regular;
+    padding-top: 20px;
+
+
+  }
+  &__info-picture {
+    padding-right: 50px;
+  }
+  &__info-picture2 {
+    padding-left: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "media";

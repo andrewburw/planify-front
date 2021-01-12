@@ -14,7 +14,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+p{
+  margin: 0;
+}
 ul,
 li {
   list-style: none;
@@ -46,7 +48,17 @@ button:focus {
   height: 100vh;
   padding: 72px 0 50px;
 }
+.page__section-half {
+  position: relative;
+  height: 60vh;
+  padding: 45px 0 0;
+}
+.page__section-onehalf {
+  position: relative;
+  height: 120vh;
+  padding: 45px 0 0;
 
+}
 .container {
   margin: 0 auto;
   max-width: 1118px;
