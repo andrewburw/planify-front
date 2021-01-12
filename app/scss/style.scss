@@ -1,15 +1,93 @@
 @import "vars";
 @import "global";
+@import "fonts";
 
+.header {
+  position: fixed;
+  left: 0px;
+  top: 32px;
+  right: 0px;
+  z-index: 10;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+  }
+  &__try-button {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 11px;
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  &__try-button:hover {
+    background-color: $global-red;
+    color: #ffffff;
+  }
+  &__try-button:active {
+    transform: translateY(4px);
+  }
+}
 
+.menu {
+  &__list-item {
+    display: inline-block;
+    color: white;
+    & + .menu__list-item {
+      padding-left: 27px;
+    }
+  }
+  &__list-link {
+    transition-duration: 0.4s;
+  }
 
+  &__list-link:hover {
+    text-decoration: underline;
+  }
+}
 
+.top {
+  padding-top: 152px;
+  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-
-
-
-
-
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__inner-container {
+    max-width: 783px;
+  }
+  &__logo {
+    text-align: center;
+  }
+  &__title {
+    @extend %rb-bold;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__sub-title {
+    @extend %rb-regular;
+    padding-top: 24px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__buttons {
+    text-align: center;
+    padding-top: 50px;
+  }
+}
 
 @import "media";

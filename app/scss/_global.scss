@@ -1,20 +1,23 @@
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
-*,*::before, *::after{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-a{
-    text-decoration: none;
-    color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul,
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 h1,
@@ -23,23 +26,53 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-size: inherit;
+  margin: 0;
+  font-size: inherit;
 }
 
-body{
-
-    min-width: 320px;
-    overflow-x: hidden;
-    position: relative;
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  @extend %rb-regular;
+  font-size: 15px;
 }
-
+button:focus {
+  outline: 0;
+}
 .page__section {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
+  padding: 72px 0 50px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1118px;
+  margin: 0 auto;
+  max-width: 1118px;
+}
+
+.title {
+  @extend %rb-bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.white-btn {
+  background-color: #fffafa;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  padding: 14px 40px;
+  @extend %rb-bold;
+  margin-right: 15px;
+}
+
+.white-btn:hover {
+  background-color: $global-red;
+  color: #ffffff;
+}
+.white-btn:active {
+  transform: translateY(4px);
 }
