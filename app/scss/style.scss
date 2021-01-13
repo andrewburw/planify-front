@@ -188,16 +188,138 @@
 }
 
 
+/* FOURTH SECTION */
+
+.fourth {
+  padding: 30px 0 50px;
+  &__cards-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    
+  }
+   &__card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+    border-top: 12px solid black;
+    padding: 10px 0px 30px;
+    max-width: 333px;
+    width: 330px;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+  &__card-plantitle{
+    padding-top: 20px;
+    @extend %rb-bold;
+    font-size: 30px;
+    line-height: 35px;
+
+  }
+  &__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  &__price-benefits{
+
+    padding-top: 35px;
+  }
+  &__price-ben-item + .fourth__price-ben-item {
+    padding-top: 16px;
+  }
+  &__btns {
+    padding-top: 30px;
+  }
+}
 
 
 
+/* FIFTH SECTION */
 
 
+.fifth{
+  padding: 20px 0 50px;
+ /* background: linear-gradient(0deg, white 50%, black 50%); */
+  &__text {
+    color: white;
+    padding-top: 10px;
+  }
+  &__accardion-faq{
+    padding-top: 20px;
+  }
+  &__blackside{
+    background-color: black;
+    height: 60%;
+  }
+  &__accardion-faq{
+    max-width: 500px;
+    margin: auto;
+  }
+  &__accordion label{
+    display:block;
+    background-color: black;
+    padding: 10px;
+    color: white;
 
+    cursor: pointer;
+     border: 1px solid  white;
+  }
+  &__accordion p{
+    color: #424242;
+    padding: 10px;
+    border-bottom: 1px solid #bdbdbd;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    text-align: left;
+    color: #fff;
+    margin-top: 0px;
+  }
+  #fifth__tm:checked ~ .fifth__accordion-hiddentext{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
 
+input#fifth__tm{
+  display: none;
+  position: relative;
+}
 
+#fifth__tn:checked ~ .fifth__accordion-hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
 
+}
 
+input#fifth__tn{
+  display: none;
+  position: relative;
+}
+
+#fifth__to:checked ~ .fifth__accordion-hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#fifth__to{
+  display: none;
+  position: relative;
+}
+ &__acca-plus {
+  float: right;
+}
+&__accordion-hiddentext{
+
+  @extend %rb-regular;
+}
+}
 
 
 @import "media";
+
+
+

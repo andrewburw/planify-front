@@ -20,6 +20,7 @@ p{
 ul,
 li {
   list-style: none;
+  margin: 0;
 }
 
 h1,
@@ -32,6 +33,9 @@ h6 {
   font-size: inherit;
 }
 
+ul{
+  padding: 0;
+}
 body {
   margin: 0;
   min-width: 320px;
@@ -55,7 +59,7 @@ button:focus {
 }
 .page__section-onehalf {
   position: relative;
-  height: 120vh;
+  height: 150vh;
   padding: 45px 0 0;
 
 }
@@ -70,8 +74,30 @@ button:focus {
   line-height: 21px;
 }
 
-.white-btn {
-  background-color: #fffafa;
+.section-header {
+  text-align: center;
+  max-width: 470px;
+  margin:0 auto;
+
+}
+.section__header-title{
+  @extend %rb-bold;
+  font-size: 24px;
+  line-height: 28px;
+
+}
+
+.section__header-subtext{
+  @extend %rb-regular;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 15px;
+
+}
+
+/* BUTTONS */
+
+.btn {
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -79,12 +105,26 @@ button:focus {
   padding: 14px 40px;
   @extend %rb-bold;
   margin-right: 15px;
+
+}
+.white-btn {
+  background-color: #fffafa;
+ 
 }
 
 .white-btn:hover {
   background-color: $global-red;
   color: #ffffff;
 }
-.white-btn:active {
+.btn:active {
   transform: translateY(4px);
+}
+
+.red-btn {
+  background-color: $global-red;
+  color: #ffffff;
+}
+.red-btn:hover {
+  background-color: $global-red;
+  color: #ffffff;
 }
