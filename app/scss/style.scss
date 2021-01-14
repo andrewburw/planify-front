@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+@import "main_page_calendar/style"; /* IMPORT main page files */
 
 .header {
   position: fixed;
@@ -8,7 +9,7 @@
   top: 32px;
   right: 0px;
   z-index: 10;
-  transition: background .5s;
+  transition: background 0.5s;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -32,11 +33,10 @@
     transform: translateY(4px);
   }
 }
-.header{
+.header {
   background-color: transparent;
 }
 .menu {
-  
   &__list-item {
     display: inline-block;
     color: white;
@@ -93,20 +93,17 @@
   }
 }
 
-
 /* SECOND SECTION  */
 
-
-
 .second {
-  background-color: #ECECEC;
-  
+  background-color: #ececec;
+
   &__inner {
     display: flex;
     justify-content: space-between;
   }
   &__card {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 5px 5px;
     border-top: 12px solid black;
@@ -117,7 +114,7 @@
     transition: 0.3s;
   }
   &__card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   &__card-title {
     @extend %rb-bold;
@@ -132,52 +129,43 @@
     padding-top: 19px;
   }
   &__card-href {
-
-     padding-top: 36px;
+    padding-top: 36px;
   }
   &__crd-href {
-
     color: $global-red;
   }
   &__crd-href:hover {
-
-  text-decoration: underline;
+    text-decoration: underline;
   }
 }
 /* THIRD SECTION */
-.third{
-  &__info-card{
-     display: flex;
-     justify-content: space-between;
-     padding-top: 70px;
-    
+.third {
+  &__info-card {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
   }
-  &__info-text{
+  &__info-text {
     max-width: 457px;
-    padding-top: 20px;  
+    padding-top: 20px;
     padding-left: 30px;
     vertical-align: middle;
-   
   }
-  &__info-text2{
+  &__info-text2 {
     max-width: 457px;
-    padding-top: 50px;  
-   
+    padding-top: 50px;
+
     vertical-align: middle;
-   
   }
-  &__info-text-title{
+  &__info-text-title {
     @extend %rb-bold;
     color: $global-red;
     font-size: 18px;
     line-height: 21px;
-
   }
   &__info-text-text {
     @extend %rb-regular;
     padding-top: 20px;
-
-
   }
   &__info-picture {
     padding-right: 50px;
@@ -185,21 +173,22 @@
   &__info-picture2 {
     padding-left: 30px;
   }
+  &__info-picture3 {
+    padding-right: 140px;
+  }
 }
-
 
 /* FOURTH SECTION */
 
 .fourth {
   padding: 30px 0 50px;
-  &__cards-container{
+  &__cards-container {
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
-    
   }
-   &__card {
-    background: #FFFFFF;
+  &__card {
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 5px 5px;
     border-top: 12px solid black;
@@ -210,18 +199,16 @@
     text-align: center;
     transition: 0.3s;
   }
-  &__card-plantitle{
+  &__card-plantitle {
     padding-top: 20px;
     @extend %rb-bold;
     font-size: 30px;
     line-height: 35px;
-
   }
   &__card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-  &__price-benefits{
-
+  &__price-benefits {
     padding-top: 35px;
   }
   &__price-ben-item + .fourth__price-ben-item {
@@ -232,39 +219,36 @@
   }
 }
 
-
-
 /* FIFTH SECTION */
 
-
-.fifth{
+.fifth {
   padding: 20px 0 50px;
- /* background: linear-gradient(0deg, white 50%, black 50%); */
+  /* background: linear-gradient(0deg, white 50%, black 50%); */
   &__text {
     color: white;
     padding-top: 10px;
   }
-  &__accardion-faq{
+  &__accardion-faq {
     padding-top: 20px;
   }
-  &__blackside{
+  &__blackside {
     background-color: black;
     height: 60%;
   }
-  &__accardion-faq{
+  &__accardion-faq {
     max-width: 500px;
     margin: auto;
   }
-  &__accordion label{
-    display:block;
+  &__accordion label {
+    display: block;
     background-color: black;
     padding: 10px;
     color: white;
 
     cursor: pointer;
-     border: 1px solid  white;
+    border: 1px solid white;
   }
-  &__accordion p{
+  &__accordion p {
     color: #424242;
     padding: 10px;
     border-bottom: 1px solid #bdbdbd;
@@ -275,51 +259,149 @@
     color: #fff;
     margin-top: 0px;
   }
-  #fifth__tm:checked ~ .fifth__accordion-hiddentext{
+  #fifth__tm:checked ~ .fifth__accordion-hiddentext {
     display: block;
     visibility: visible;
     opacity: 1;
   }
-  
 
-input#fifth__tm{
-  display: none;
-  position: relative;
+  input#fifth__tm {
+    display: none;
+    position: relative;
+  }
+
+  #fifth__tn:checked ~ .fifth__accordion-hiddentext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  input#fifth__tn {
+    display: none;
+    position: relative;
+  }
+
+  #fifth__to:checked ~ .fifth__accordion-hiddentext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  input#fifth__to {
+    display: none;
+    position: relative;
+  }
+  &__acca-plus {
+    float: right;
+  }
+  &__accordion-hiddentext {
+    @extend %rb-regular;
+  }
+  /* DARK SIDE */
+
+  &__white-header {
+    padding-top: 20px;
+  }
+  &_w_spon-row_1 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_w_spon-row_1 img {
+    filter: grayscale(100%);
+  }
+  &_w_spon-row_2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  &_w_spon-row_2 img {
+    filter: grayscale(100%);
+  }
 }
 
-#fifth__tn:checked ~ .fifth__accordion-hiddentext{
-  display: block;
-  visibility: visible;
-  opacity: 1;
+/*     SIXTH SECTION */
 
-}
-
-input#fifth__tn{
-  display: none;
-  position: relative;
-}
-
-#fifth__to:checked ~ .fifth__accordion-hiddentext{
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
-input#fifth__to{
-  display: none;
-  position: relative;
-}
- &__acca-plus {
-  float: right;
-}
-&__accordion-hiddentext{
-
-  @extend %rb-regular;
-}
+.sixth {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffffff;
+  padding-top: 30px;
+  &__text {
+    padding-top: 10px;
+  }
+  &__main-img {
+    text-align: center;
+  }
+  &__main-button {
+    text-align: center;
+    padding-top: 70px;
+  }
 }
 
+/* FOOTER */
+.footer {
+  &__main {
+    background-color: #eeeeee;
+    height: 90%;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__column_1 {
+    max-width: 240px;
+  }
+  &_1cl_text {
+    padding-top: 20px;
+    @extend %rb-regular;
+    color: #312D2D;
+  }
+  &__title {
+    @extend %rb-Medium;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__list-links {
+    padding-top: 20px;
+    color: #312D2D;
+  }
+  &__l_links-item + .footer__l_links-item {
+    padding-top: 20px;
+
+  }
+  /* FO0TER END */
+  &__end{
+    background-color: #D7D7D7;
+    height: 10%;
+  }
+  &__end-inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__end_copyright{
+     color: #312D2D;
+  }
+  &__end_right_ul{
+    display: flex;
+   
+    color: #312D2D;
+  }
+  &__end_r_item + .footer__end_r_item{
+    
+    padding-left: 40px;
+  }
+
+}
 
 @import "media";
-
-
-
