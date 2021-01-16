@@ -1,3 +1,47 @@
-.test{
-  background-color: red;
+
+
+@import "main_media";
+
+
+
+.header_co { grid-area: header; }
+.leftmenu { grid-area: menu; }
+.main_co { grid-area: main; }
+
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu  main main main main main'
+    'menu  main main main main main';
+    grid-template-columns: 220px;
+    grid-template-rows: 50px;
+   
+ 
+  
 }
+
+.header_co{
+  background-color:#fff;
+}
+
+.main_co{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; 
+
+  
+}
+.left_menu-container{
+  width:80%;
+  margin: 0 auto;
+}
+
+.burger__menu-item{
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  margin: 3px 0;  
+  border-radius: 3px;
+}
+
