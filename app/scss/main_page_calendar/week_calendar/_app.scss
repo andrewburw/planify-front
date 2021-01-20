@@ -1,0 +1,38 @@
+.weekday1 {grid-area: weekday1;}
+.weekday2 {grid-area: weekday2;}
+.weekday3 {grid-area: weekday3;}
+.weekday4 {grid-area: weekday4;}
+.weekday5 {grid-area: weekday5;}
+.weekday6 {grid-area: weekday6;}
+.weekday7 {grid-area: weekday7;}
+
+.item10 { grid-area: header; }
+.item20 { grid-area: menu; }
+.item30 { grid-area: main; }
+.item40 { grid-area: right; }
+.item50 { grid-area: footer; }
+
+
+.cal_w_app{
+
+
+}
+.grid-container3 {
+  display: grid;
+  grid-template-areas:
+    'weekday1 weekday2 weekday3 weekday4 weekday5 weekday6 weekday7'
+    'menu main main main main  main main '
+    'menu footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 5px;
+  height: 100vh;
+  width: 100vh;
+}
+
+.grid-container3 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
