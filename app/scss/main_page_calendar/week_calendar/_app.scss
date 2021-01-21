@@ -229,13 +229,7 @@ for (let i = 0 ; i < 24; i++){
 .menu23 { grid-area: menu23; }
 
 
-.cal_w_app{
-    width: 100%;
 
-}
-.container4{
-   width: 100%;
-}
 .grid-container3 {
   display: grid;
   grid-template-areas:
@@ -276,12 +270,10 @@ for (let i = 0 ; i < 24; i++){
 ,.weekday6,.weekday7{
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
- 
-  font-size: 15px;
+   font-size: 15px;
   width: 120px; 
-  height: 60px;   
-
-
+  height: 60px; 
+ 
 }
 
 .week__day_h{
@@ -299,6 +291,59 @@ for (let i = 0 ; i < 24; i++){
 }
 
 .cell__bg_color{
-
+ 
   background-color: #F2F0F0;
+}
+
+.menu__p {
+  @extend %rb-bold;
+
+}
+.selected {
+  &__user-name{
+    @extend %rb-regular;
+    font-size: 11px;
+    padding-left: 5px;
+  }
+  &__user-time{
+    @extend %rb-regular;
+  font-size: 11px;
+  padding-left: 5px;
+  opacity: 0.2;
+  font-size: 10px;
+  
+  }
+}
+
+
+/* selected part for privew only */
+
+.selected_1 {
+  background-color: $selected-time-cl1;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  color: white;
+
+  cursor: pointer;
+}
+
+.selected_2 {
+  background-color: $selected-time-cl2;
+  height: 100%;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+  cursor: pointer;
+}
+
+.selected_3 {
+  background-color: $selected-time-cl3;
+  height: 100%;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  cursor: pointer;
 }
