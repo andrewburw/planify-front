@@ -8,6 +8,83 @@
   </head>
 
   <body>
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal__container">
+          <div class="modal__left-side">
+            <div class="modal__header"><h1>Planify</h1></div>
+            <div class="modal__headindn-cont">
+              <h1 class="modal__heading-welcome">Welcome to Planify.</h1>
+              <h4 class="modal__heading-subwelcome">Ready to Join?</h4>
+            </div>
+            <div class="modal__footer">
+              <img src="images/social_icons/fbng1.png" alt="planify" />
+              <img src="images/social_icons/in.png" alt="planify" />
+              <img src="images/social_icons/insta.png" alt="planify" />
+            </div>
+          </div>
+          <div class="modal__right-side">
+            <div class="modal__right-container">
+              <div class="modal__right__logo">
+                <img src="images/big-logo_login.png" alt="planify" />
+              </div>
+
+              <form  class="modal__right-form">
+                <div class="modal__form-group">
+                  <label for="username">USERNAME</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Enter username"
+                  />
+                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+
+                <div class="modal__form-group">
+                  <label for="email">EMAIL</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter email"
+                  />
+                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="modal__form-group">
+                  <label for="pass1">PSSWORD</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="pass1"
+                    placeholder="Enter password"
+                  />
+                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="modal__form-group">
+                  <label for="pass2">REAPEAT PASSWORD</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="pass2"
+                    placeholder="Repeat password"
+                  />
+                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="modal__right-form-footer">
+                  <button class="modal__right-buttn-reg">Register</button>
+                  <p class="modal__right-f-f-registred">I am alredy a member</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL END -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -162,9 +239,7 @@
       <div class="container">
         <div class="fourth__inner">
           <div class="section-header">
-            <h1 class="section__header-title">
-              Afforable Pricing
-            </h1>
+            <h1 class="section__header-title">Afforable Pricing</h1>
             <p class="fourth__text-subtext section__header-subtext">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -231,43 +306,63 @@
     <!-- FIFTH SECTION -->
     <section class="page__section fifth">
       <div class="fifth__blackside">
-      <div class="container">
-        <div class="fifth__text section-header">
-          <h1 class="fifth__text-title section__header-title">
-            Frequently Asked Question
-          </h1>
-          <p class="fourth__text-subtext section__header-subtext">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-          </p>
-        </div>
-        <div class="fifth__accardion-faq">
-         
+        <div class="container">
+          <div class="fifth__text section-header">
+            <h1 class="fifth__text-title section__header-title">
+              Frequently Asked Question
+            </h1>
+            <p class="fourth__text-subtext section__header-subtext">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+          <div class="fifth__accardion-faq">
             <!-- Item 1 -->
-              <div class="fifth__accordion">
-                <label for="fifth__tm" class="accordionitem">
-                <span>Item 1</span><span class="fifth__acca-plus">+</span></label>
-                <input type="checkbox" id="fifth__tm"/>
-                <p class="fifth__accordion-hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed  into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-              </div>
-              
-              <!-- Item 2 -->
-              <div class="fifth__accordion">
-                <label for="fifth__tn" class="accordionitem">
-                  <span>Item 1</span><span class="fifth__acca-plus">+</span></label>
-                  <input type="checkbox" id="fifth__tn"/>
-                <p class="fifth__accordion-hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-              </div>
-              
-              <!-- Item 3 -->
-              <div class="fifth__accordion">
-                <label for="fifth__to" class="accordionitem">
-                  <span>Item 1 </span><span class="fifth__acca-plus">+</span></label>
-                  <input type="checkbox" id="fifth__to"/>
-                <p class="fifth__accordion-hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a .</p>
-              </div>
-            
+            <div class="fifth__accordion">
+              <label for="fifth__tm" class="accordionitem">
+                <span>Item 1</span
+                ><span class="fifth__acca-plus">+</span></label
+              >
+              <input type="checkbox" id="fifth__tm" />
+              <p class="fifth__accordion-hiddentext">
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections.
+              </p>
             </div>
+
+            <!-- Item 2 -->
+            <div class="fifth__accordion">
+              <label for="fifth__tn" class="accordionitem">
+                <span>Item 1</span
+                ><span class="fifth__acca-plus">+</span></label
+              >
+              <input type="checkbox" id="fifth__tn" />
+              <p class="fifth__accordion-hiddentext">
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="fifth__accordion">
+              <label for="fifth__to" class="accordionitem">
+                <span>Item 1 </span
+                ><span class="fifth__acca-plus">+</span></label
+              >
+              <input type="checkbox" id="fifth__to" />
+              <p class="fifth__accordion-hiddentext">
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a .
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="fifth__whiteside">
@@ -278,22 +373,21 @@
             </h1>
           </div>
           <div class="fifth__white-sponsors-cn">
-              <div class="fifth_w_spon-row_1">
-               <img src="images/sponsors/sponsor_1.png" alt="planify sponsor" />
-               <img src="images/sponsors/sponsor_2.png" alt="planify sponsor" />
-               <img src="images/sponsors/sponsor_3.png" alt="planify sponsor" />
-              </div>
-              <div class="fifth_w_spon-row_2">
-                <img src="images/sponsors/sponsor_4.png" alt="planify sponsor" />
-                <img src="images/sponsors/sponsor_5.png" alt="planify sponsor" />
-              
-               </div>
+            <div class="fifth_w_spon-row_1">
+              <img src="images/sponsors/sponsor_1.png" alt="planify sponsor" />
+              <img src="images/sponsors/sponsor_2.png" alt="planify sponsor" />
+              <img src="images/sponsors/sponsor_3.png" alt="planify sponsor" />
+            </div>
+            <div class="fifth_w_spon-row_2">
+              <img src="images/sponsors/sponsor_4.png" alt="planify sponsor" />
+              <img src="images/sponsors/sponsor_5.png" alt="planify sponsor" />
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-    </section> 
-     <!-- FIFTH SECTION -->
-     <section class="page__section sixth">
+    </section>
+    <!-- FIFTH SECTION -->
+    <section class="page__section sixth">
       <div class="container">
         <div class="sixth__text section-header">
           <h1 class="sixth__text-title section__header-title">
@@ -304,89 +398,86 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
           </p>
         </div>
-         <div class="sixth__main-img">
-
-          <img src="images/planify_inv.png" alt="planiify">
-         </div>
-         <div class="sixth__main-button">
+        <div class="sixth__main-img">
+          <img src="images/planify_inv.png" alt="planiify" />
+        </div>
+        <div class="sixth__main-button">
           <button class="fourth__btn-try btn red-btn">Try</button>
-         </div>
-
+        </div>
       </div>
-       </section>
-        <!-- FOOTER SECTION -->
-     <section class="page__section-half footer">
-             <div class="footer__main">
-              <div class="container">
-                <div class="footer__inner">
-              <div class="footer__column_1">
-
-
-                <div class="footer_1cl_image">
-                  <img src="images/small_dark_logo.png" alt="planify">
-                </div>
-                  <p class="footer_1cl_text">Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry. Lorem
-                     Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    </section>
+    <!-- FOOTER SECTION -->
+    <section class="page__section-half footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__column_1">
+              <div class="footer_1cl_image">
+                <img src="images/small_dark_logo.png" alt="planify" />
               </div>
-               <div class="footer__column_2">
-                      <h4 class="footer__title">Useful Links</h4>
-                      <ul class="footer__list-links">
-                        <li class="footer__l_links-item">About us</li>
-                        <li class="footer__l_links-item">Our services</li>
-                        <li class="footer__l_links-item">Our Team</li>
-                        <li class="footer__l_links-item">Testimonials</li>       
-                      </ul>
-               </div>
-               <div class="footer__column_3">
-                <h4 class="footer__title">Useful Links</h4>
-                <ul class="footer__list-links">
-                  <li class="footer__l_links-item"><a href="">About us</a></li>
-                  <li class="footer__l_links-item"><a href="">Our services</a></li>
-                  <li class="footer__l_links-item"><a href="">Our Team</a></li>
-                  <li class="footer__l_links-item"><a href="">Testimonials</a></li>       
-                </ul>
-         </div>
-         <div class="footer__column_4">
-          <h4 class="footer__title">Useful Links</h4>
-          <ul class="footer__list-links">
-            <li class="footer__l_links-item"><a href="">About us</a></li>
-            <li class="footer__l_links-item"><a href="">Our services</a></li>
-            <li class="footer__l_links-item"><a href="">Our Team</a></li>
-            <li class="footer__l_links-item"><a href="">Testimonials</a></li>       
-          </ul>
-   </div>
-
-
-
+              <p class="footer_1cl_text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
             </div>
-
-              </div>
-
-             </div>
-             <div class="footer__end">
-               <div class="container">
-                 <div class="footer__end-inner">
-                <div class="footer__end-leftside">
-                  <p class="footer__end_copyright">Copyright 2021 , Planify. All Righits Reserved </p>
-                </div>
-                <div class="footer__end-rightside">
-                       <ul class="footer__end_right_ul">
-                        <li class="footer__end_r_item">Legal</li>
-                        <li class="footer__end_r_item">Terms and Conditions </li>
-                        <li class="footer__end_r_item">Contact</li>
-
-                       </ul>
-
-
-                </div> 
-                
-                 </div>
-                
-              </div>
-              
-             </div>
-       </section>
+            <div class="footer__column_2">
+              <h4 class="footer__title">Useful Links</h4>
+              <ul class="footer__list-links">
+                <li class="footer__l_links-item">About us</li>
+                <li class="footer__l_links-item">Our services</li>
+                <li class="footer__l_links-item">Our Team</li>
+                <li class="footer__l_links-item">Testimonials</li>
+              </ul>
+            </div>
+            <div class="footer__column_3">
+              <h4 class="footer__title">Useful Links</h4>
+              <ul class="footer__list-links">
+                <li class="footer__l_links-item"><a href="">About us</a></li>
+                <li class="footer__l_links-item">
+                  <a href="">Our services</a>
+                </li>
+                <li class="footer__l_links-item"><a href="">Our Team</a></li>
+                <li class="footer__l_links-item">
+                  <a href="">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column_4">
+              <h4 class="footer__title">Useful Links</h4>
+              <ul class="footer__list-links">
+                <li class="footer__l_links-item"><a href="">About us</a></li>
+                <li class="footer__l_links-item">
+                  <a href="">Our services</a>
+                </li>
+                <li class="footer__l_links-item"><a href="">Our Team</a></li>
+                <li class="footer__l_links-item">
+                  <a href="">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__end">
+        <div class="container">
+          <div class="footer__end-inner">
+            <div class="footer__end-leftside">
+              <p class="footer__end_copyright">
+                Copyright 2021 , Planify. All Righits Reserved
+              </p>
+            </div>
+            <div class="footer__end-rightside">
+              <ul class="footer__end_right_ul">
+                <li class="footer__end_r_item">Legal</li>
+                <li class="footer__end_r_item">Terms and Conditions</li>
+                <li class="footer__end_r_item">Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script>
       window.onscroll = function () {
