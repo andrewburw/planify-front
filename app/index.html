@@ -4,35 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <title>Planify</title>
   </head>
-
+ 
   <body>
-    <!-- MODAL -->
+    
+    <!-- MODAL LOGIN -->
+    <div class="modal hide">
+     
+     <div class="modal-content">
+       <div class="modal-reg__container">
+         <div class="modal-log__left-side">
+           <div class="modal-reg__header"><h1>Planify</h1></div>
+           <div class="modal-reg__headindn-cont">
+             <h1 class="modal-reg__heading-welcome">Welcome Back.</h1>
+             <h4 class="modal-reg__heading-subwelcome">Ready to Login?</h4>
+           </div>
+           <div class="modal-reg__footer">
+             <img src="images/social_icons/fbng1.png" alt="planify" />
+             <img src="images/social_icons/in.png" alt="planify" />
+             <img src="images/social_icons/insta.png" alt="planify" />
+           </div>
+         </div>
+         <div class="modal-reg__right-side">
+           <div class="modal-reg__right-container">
+             <div class="modal-reg__right__logo">
+               <img src="images/big-logo_login.png" alt="planify" />
+             </div>
+               
+             <form  class="modal-log__right-form">
+              
+               <div class="modal-reg__form-group">
+                 <label for="email">EMAIL</label>
+                 <input
+                   type="email"
+                   class="form-control"
+                   id="email"
+                   placeholder="Enter email"
+                 />
+                 <small  class="hide">We'll never share your email with anyone else.</small>
+               </div>
+               <div class="modal-reg__form-group">
+                 <label for="pass1">PSSWORD</label>
+                 <input
+                   type="password"
+                   class="form-control"
+                   id="pass1"
+                   placeholder="Enter password"
+                 />
+               <small class="hide">We'll never share your email with anyone else.</small>
+               </div>
+              
+               <div class="modal-log__right-form-footer">
+                 <button class="modal-reg__right-buttn-reg">Login</button>
+                 <p class="modal-reg__right-f-f-registred"><a href="#">I am not a member</a></p>
+               </div>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div> 
+    
+
+    <!--
     <div id="myModal" class="modal">
-      <!-- Modal content -->
+       Modal content 
       <div class="modal-content">
-        <div class="modal__container">
-          <div class="modal__left-side">
-            <div class="modal__header"><h1>Planify</h1></div>
-            <div class="modal__headindn-cont">
-              <h1 class="modal__heading-welcome">Welcome to Planify.</h1>
-              <h4 class="modal__heading-subwelcome">Ready to Join?</h4>
+        <div class="modal-reg__container">
+          <div class="modal-reg__left-side">
+            <div class="modal-reg__header"><h1>Planify</h1></div>
+            <div class="modal-reg__headindn-cont">
+              <h1 class="modal-reg__heading-welcome">Welcome to Planify.</h1>
+              <h4 class="modal-reg__heading-subwelcome">Ready to Join?</h4>
             </div>
-            <div class="modal__footer">
+            <div class="modal-reg__footer">
               <img src="images/social_icons/fbng1.png" alt="planify" />
               <img src="images/social_icons/in.png" alt="planify" />
               <img src="images/social_icons/insta.png" alt="planify" />
             </div>
           </div>
-          <div class="modal__right-side">
-            <div class="modal__right-container">
+          <div class="modal-reg__right-side">
+            <div class="modal-reg__right-container">
               <div class="modal__right__logo">
                 <img src="images/big-logo_login.png" alt="planify" />
               </div>
 
-              <form  class="modal__right-form">
-                <div class="modal__form-group">
+              <form  class="modal-reg__right-form">
+                <div class="modal-reg__form-group">
                   <label for="username">USERNAME</label>
                   <input
                     type="text"
@@ -40,10 +100,10 @@
                     id="username"
                     placeholder="Enter username"
                   />
-                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                  <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
-                <div class="modal__form-group">
+                <div class="modal-reg__form-group">
                   <label for="email">EMAIL</label>
                   <input
                     type="email"
@@ -51,9 +111,9 @@
                     id="email"
                     placeholder="Enter email"
                   />
-                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                  <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="modal__form-group">
+                <div class="modal-reg__form-group">
                   <label for="pass1">PSSWORD</label>
                   <input
                     type="password"
@@ -61,9 +121,9 @@
                     id="pass1"
                     placeholder="Enter password"
                   />
-                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="modal__form-group">
+                <div class="modal-reg__form-group">
                   <label for="pass2">REAPEAT PASSWORD</label>
                   <input
                     type="password"
@@ -71,27 +131,27 @@
                     id="pass2"
                     placeholder="Repeat password"
                   />
-                  <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                   <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="modal__right-form-footer">
-                  <button class="modal__right-buttn-reg">Register</button>
-                  <p class="modal__right-f-f-registred">I am alredy a member</p>
+                <div class="modal-reg__right-form-footer">
+                  <button class="modal-reg__right-buttn-reg">Register</button>
+                  <p class="modal-reg__right-f-f-registred">I am alredy a member</p>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>  -->
 
     <!-- MODAL END -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo">
-            <picture class="logo__img">
-              <img src="images/logo.png" alt="Planify" /> </picture
-          ></a>
+            <picture >
+              <img class="header__logo-img"src="images/logo.png" alt="Planify" /> 
+              </picture></a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
@@ -139,11 +199,11 @@
     <section class="page__section-half second">
       <div class="container">
         <div class="second__inner">
-          <div class="second__card">
+          <div id="first_card" class="second__card ">
             <div class="second__card-logoimg">
               <img src="images/card_image_1.png" alt="card logo" />
             </div>
-            <h1 class="second__card-title">Lorem Ipsum</h1>
+            <h1 class="second__card-title ">Lorem Ipsum</h1>
             <p class="second__card-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
@@ -153,7 +213,7 @@
             </div>
           </div>
 
-          <div class="second__card">
+          <div id="second_card"class="second__card">
             <div class="second__card-logoimg">
               <img src="images/card_image_2.png" alt="card logo" />
             </div>
@@ -167,7 +227,7 @@
             </div>
           </div>
 
-          <div class="second__card">
+          <div id="third_card" class="second__card">
             <div class="second__card-logoimg">
               <img src="images/card_image_3.png" alt="card logo" />
             </div>
@@ -188,7 +248,7 @@
       <div class="container">
         <div class="third__inner">
           <div class="third__info-card">
-            <div class="third__info-text">
+            <div id="third_one" class="third__info-text hide">
               <h1 class="third__info-text-title">Lorem Ipsum</h1>
               <p class="third__info-text-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -197,16 +257,16 @@
                 of type and scrambled it to make a type specimen book
               </p>
             </div>
-            <div class="third__info-picture">
+            <div id="third_two" class="third__info-picture hide">
               <img src="images/info_text_1.png" alt="Planify" />
             </div>
           </div>
 
           <div class="third__info-card">
-            <div class="third__info-picture2">
+            <div id="third_third"class="third__info-picture2 hide">
               <img src="images/info_text_2.png" alt="Planify" />
             </div>
-            <div class="third__info-text2">
+            <div id="third_fourth" class="third__info-text2 hide">
               <h1 class="third__info-text-title">Lorem Ipsum</h1>
               <p class="third__info-text-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -218,7 +278,7 @@
           </div>
 
           <div class="third__info-card">
-            <div class="third__info-text">
+            <div  id="third_fivth" class="third__info-text hide">
               <h1 class="third__info-text-title">Lorem Ipsum</h1>
               <p class="third__info-text-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -227,7 +287,7 @@
                 of type and scrambled it to make a type specimen book
               </p>
             </div>
-            <div class="third__info-picture3">
+            <div  id="third_sixth" class="third__info-picture3 hide">
               <img src="images/info_text_3.png" alt="Planify" />
             </div>
           </div>
@@ -479,25 +539,8 @@
       </div>
     </section>
 
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      function myFunction() {
-        //nav bar change color on scroll function
-        var elem = document.querySelector(".header");
-        if (
-          document.body.scrollTop >= 30 ||
-          document.documentElement.scrollTop >= 30
-        ) {
-          elem.style.backgroundColor = "black";
-          elem.style.top = "0px";
-        } else {
-          elem.style.top = "32px";
-          elem.style.backgroundColor = "transparent";
-        }
-      }
+    <script src="js/main.js">
+     
     </script>
   </body>
 </html>

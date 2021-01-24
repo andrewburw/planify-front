@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+@import "animations";
 @import "main_page_calendar/style"; /* IMPORT main page files */
 
 .header {
@@ -15,6 +16,10 @@
     justify-content: space-between;
     align-items: center;
     min-height: 30px;
+  }
+  &__logo-img{
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   &__try-button {
     background-color: #ffffff;
@@ -114,8 +119,9 @@
     transition: 0.3s;
   }
   &__card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   }
+ 
   &__card-title {
     @extend %rb-bold;
     font-size: 18px;
