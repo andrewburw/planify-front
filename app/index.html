@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Planify</title>
   </head>
  
@@ -145,6 +145,18 @@
     </div>  -->
 
     <!-- MODAL END -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Product </a>
+        <a href="#">Pricing</a>
+        <a href="#">Learn More</a>
+        <a href="#">Log in</a>
+      
+        <button class="header__try-button">Try Product</button>
+      </div>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -170,6 +182,7 @@
                 <button class="header__try-button">Try Product</button>
               </li>
             </ul>
+           <div class="burger_nav"><i class="fa fa-2x fa-bars" onclick="openNav()"></i></div> 
           </nav>
         </div>
       </div>

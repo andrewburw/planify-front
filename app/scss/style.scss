@@ -4,6 +4,13 @@
 @import "animations";
 @import "main_page_calendar/style"; /* IMPORT main page files */
 
+
+.overlay{
+  display: none;
+} 
+.burger_nav{
+  display: none;
+}
 .header {
   position: fixed;
   left: 0px;
